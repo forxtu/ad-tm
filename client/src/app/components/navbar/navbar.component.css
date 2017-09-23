@@ -1,0 +1,26 @@
+.navbar-brand {
+  font-family: 'Megrim', cursive;
+  font-weight: 700;
+
+  color: #fff;
+}
+.navbar.navbar-transparent {
+  padding-bottom: 25px;
+}
+.dashboard-route,
+.blog-route,
+.profile-route {
+  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, .42), 0 3px 20px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+}
+.dashboard-route {
+  background-color: #79589f;
+  background-image: linear-gradient(135deg, rgba(109, 11, 216, .5), transparent);
+}
+.blog-route {
+  background-color: #7a4398;
+  background-image: linear-gradient(135deg, rgba(109, 11, 216, .5), transparent);
+}
+.profile-route {
+  background-color: #390067;
+  background-image: linear-gradient(135deg, rgba(109, 11, 216, .5), transparent);
+}

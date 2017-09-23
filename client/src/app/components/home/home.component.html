@@ -1,0 +1,76 @@
+<div class="homapage__wrapper">
+
+  <div class="homepage__hero-img rellax" data-rellax-speed="-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="homepage__second-section rellax" data-rellax-speed="-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="img-responsive" src="https://www-assets3.herokucdn.com/assets/home/hero/apps-1cbc7cbe49e12ad3cfb038f1b21942c2c4773ed159e422c1c10e5d2257fbdd80.png" alt="">
+        </div>
+        <div class="col-sm-6">
+          <div class="">
+            <h1>AD tm application</h1>
+            <p class="lead">Welcome to the AD tm application - create a team with your soulmate and make everyday things comfortable!</p>
+            <div>
+              <a *ngIf="!authService.loggedIn()" routerLink="/register" class="btn btn-default">Register</a>
+              <a *ngIf="!authService.loggedIn()" routerLink="/login" class="btn btn-primary">Log in</a>
+              <a *ngIf="authService.loggedIn()" routerLink="/blog" class="btn btn-success">View Blogs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="homepage__third-section rellax" data-rellax-speed="0">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="">
+            <h2>Improve your relationships</h2>
+            <p class="lead">Optimize your time and effort. Set goals, maintain records of finances, maintain a general diary and much more, without spending a lot of time and as a game, with your soulmate </p>
+            <div>
+              <a *ngIf="!authService.loggedIn()" routerLink="/register" class="btn btn-info">Sign up for free</a>
+              <a *ngIf="authService.loggedIn()" routerLink="/blog" class="btn btn-success">View Blogs</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive" src="https://www-assets3.herokucdn.com/assets/home/hero/startup-10d700b2164d8d9ceb3934c15f01277c7a4bb2ce9d9c1d14d0bd00d680debafc.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="homepage__footer-wrap">
+    <div class="homepage__footer-top">
+      <a href="https://www.facebook.com/forxtu/" target="_blank" type="button" class="btn btn-fb"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/forxtu/" target="_blank" type="button" class="btn btn-inst"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.twitter.com/forxtu/" target="_blank" type="button" class="btn btn-tw"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.github.com/forxtu/" target="_blank" type="button" class="btn btn-github"><i class="fa fa-github"></i></a> 
+    </div>
+    <div class="homepage__footer-bottom-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="homepage__footer-bottom">
+            <div class="homepage__footer-bottom-frxt">
+              <span>created by </span><a href="https://forxtu.pro" target="_blank">Dennis 'forxtu' Merkulov</a>
+            </div>
+            <div class="homepage__footer-bottom-frxt">
+              <span>&copy; 2017 </span><a href="#">ad-team app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

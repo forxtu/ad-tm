@@ -1,0 +1,58 @@
+.login-main-wrap {
+  width: 100vw;
+  /*height: 100vh;*/
+
+  background-color: #534292;
+  /*background-image: url("https://i.imgur.com/XXI3y4g.jpg");*/
+  background-image: linear-gradient(to bottom,#5b4377,#534292);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel {
+  max-width: 430px;
+  margin: 0 auto 20px;
+
+  border-radius: 8px;
+}
+.panel h3 {
+  font-size: 26px;
+
+  padding: 40px 0 0 0;
+}
+.panel form {
+  padding: 40px;
+}
+
+.login__footer {
+  display: block;
+
+  width: 100%;
+  max-width: 430px;
+  margin: auto;
+  padding: 26.66667px 0;
+
+  text-align: center;
+
+  background: -webkit-linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+  background:         linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+.login__footer span {
+  font-weight: 700;
+
+  color: #fff;
+}
+.login__footer a {
+  text-decoration: none;
+
+  color: #fff;
+  opacity: .7;
+}
+.login__footer a:hover {
+  text-decoration: underline;
+}
+.login__new-to-wrap{
+  padding-top: 32px;
+}

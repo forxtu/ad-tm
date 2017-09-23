@@ -1,0 +1,99 @@
+.homepage__hero-img {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('http://i.giftrunk.com/b7arjw.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homepage__hero-content {
+  padding: 52px 0;
+
+  background-color: rgba(255,255,255, .5);
+}
+.homepage__second-section {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 52px 0;
+
+  background-color: #fff;
+
+  align-items: center;
+}
+.homepage__third-section {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 52px 0;
+
+  color: #c7b8d8;
+  background-color: #3b2f63;
+  background-image: -webkit-radial-gradient(50% top, circle, rgba(84,90,182,.6) 0%, rgba(84,90,182,0) 75%),-webkit-radial-gradient(right top, circle, #794aa2 0%, rgba(121,74,162,0) 57%);
+  background-image:         radial-gradient(circle at 50% top, rgba(84,90,182,.6) 0%, rgba(84,90,182,0) 75%),radial-gradient(circle at right top, #794aa2 0%, rgba(121,74,162,0) 57%);
+
+  align-items: center;
+}
+.homepage__third-section h2 {
+  color: #fff !important;
+}
+
+.homepage__footer-wrap {
+  padding: 0;
+}
+.homepage__footer-top {
+  display: flex;
+
+  height: 200px;
+
+  border-top: 1px solid rgba(255,255,255,.2);
+  background-color: rgba(0,161,224,.3);
+  background-color: #79589f;
+  background-color: #e4e4e4;
+  background-image: linear-gradient(135deg, rgba(109, 11, 216, .1), transparent);
+
+  justify-content: center;
+  align-items: center;
+}
+.homepage__footer-bottom-wrap {
+  display: flex;
+
+  height: 100px;
+
+  background-color: #f6f6f6;
+
+  align-items: center;
+}
+.homepage__footer-bottom {
+  display: flex;
+
+  justify-content: space-between;
+}
+.btn-fb {
+  background-color: #3b5998;
+}
+.btn-inst {
+  background-color: #2e5e86;
+}
+.btn-tw {
+  background-color: #55acee;
+}
+.btn-github {
+  background-color: #333;
+}
+.homepage__footer-bottom span {
+  font-weight: 700;
+
+  opacity: .8;
+  color: #000;
+}
+.homepage__footer-bottom a {
+  text-decoration: none;
+
+  color: #999;
+}
+.homepage__footer-bottom a:hover {
+  text-decoration: underline;
+}

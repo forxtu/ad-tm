@@ -1,0 +1,60 @@
+<main class="login-main-wrap">
+  <div class="container">
+    
+    <!-- Custom Success/Error Message -->
+    <div class="row show-hide-message">
+      <div [ngClass]="messageClass">
+        {{ message }}
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3 class="login-title text-center">Log in to your account</h3>
+
+      <!-- Login Form -->
+      <form [formGroup]="form" (submit)="onLoginSubmit()">
+
+        <!-- Username Field -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <div [ngClass]="{'has-error': form.controls.username.errors && form.controls.username.dirty, 'has-success': form.controls.username.valid && form.controls.username.dirty }">
+            <input class="form-control" type="text" name="username" formControlName="username" />
+            <!-- Validation -->
+            <ul class="help-block">
+              <li *ngIf="form.controls.username.errors?.required && form.controls.username.dirty">This field is required.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Password Field  -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div [ngClass]="{'has-error': form.controls.password.errors && form.controls.password.dirty, 'has-success': form.controls.password.valid && form.controls.password.dirty }">
+            <input class="form-control" type="password" name="password" formControlName="password" />
+            <!-- Validation -->
+            <ul class="help-block">
+              <li *ngIf="form.controls.password.errors?.required && form.controls.password.dirty">This field is required.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <input [disabled]="!form.valid || processing" class="btn btn-default btn-lg btn-block" type="submit" value="Login" />
+        <div class="login__new-to-wrap text-center">
+          <span>New to AD-tm app? </span>
+          <a *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" routerLink="/register" class="login__new-to">Sign up
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <footer class="login__footer">
+      <div class="homepage__footer-bottom-frxt">
+        <span>created by </span><a href="https://forxtu.pro" target="_blank">Dennis 'forxtu' Merkulov</a>
+      </div>
+      <div class="homepage__footer-bottom-frxt">
+        <span>&copy; 2017 </span><a href="#">ad-team app</a>
+      </div>
+    </footer>
+
+  </div>
+</main>
