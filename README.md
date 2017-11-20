@@ -1,4 +1,4 @@
-## IN PROGRESS...
+## AD-tm app
 
 ## MEAN Stack with Angular 2
 
