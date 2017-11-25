@@ -1,5 +1,5 @@
 .flash-messages {
-  position: absolute;
+  position: fixed;
   right: 3vh;
   bottom: 0vh;
 }

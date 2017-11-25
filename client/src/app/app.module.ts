@@ -33,7 +33,7 @@ import { PublicProfileComponent } from './components/public-profile/public-profi
     BlogComponent,
     EditBlogComponent,
     DeleteBlogComponent,
-    PublicProfileComponent
+    PublicProfileComponent,
   ],
   imports: [
     BrowserModule,
